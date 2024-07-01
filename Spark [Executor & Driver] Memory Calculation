@@ -1,0 +1,25 @@
+Memory
+
+6 Nodes and each node have 15 cores, 64 GB RAM
+
+Cores no of concurent task
+
+for exampl we can give 5 parallel task for each executor
+num cores: 5
+
+num executor: 15/5 => 3 Executor per node
+
+num executor memory 64/3 F> 21 gb 1 or 2 gb for yarn memory 18 gb (we can have 5 gb to 18 gb memory for each job)
+
+Driver memory 8 gb
+
+node 1
+
+executor 1
+task 1 task2 task3 task4 task5
+
+executor 2
+task 1 task2 task3 task4 task5
+
+executor 3
+task 1 task2 task3 task4 task5
