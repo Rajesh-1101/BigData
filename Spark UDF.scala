@@ -1,5 +1,4 @@
-Spark UDF
---------------------
+//Spark UDF
 
 import spark.implicits._
 val cols =Seq("sno", "name")
