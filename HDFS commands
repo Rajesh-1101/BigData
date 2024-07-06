@@ -1,0 +1,100 @@
+𝐒𝐎𝐌𝐄 𝐇𝐃𝐅𝐒 𝐂𝐎𝐌𝐌𝐀𝐍𝐃𝐒 -- 1
+==================
+1. 𝐯𝐞𝐫𝐬𝐢𝐨𝐧
+That command is used to check the Hadoop version.
+Command:_- 𝐡𝐝𝐟𝐬 𝐝𝐟𝐬 𝐯𝐞𝐫𝐬𝐢𝐨𝐧
+
+2. 𝐦𝐤𝐝𝐢𝐫
+This Hadoop command is used to make new directories and takes the URI path as parameters
+Command:- 𝒉𝒅𝒇𝒔 𝒅𝒇𝒔 -𝒎𝒌𝒅𝒊𝒓 /𝒖𝒔e𝒓/𝒍𝒐𝒄𝒂𝒍/𝒇𝒊𝒓𝒔𝒕𝒅𝒊𝒓
+
+3. 𝐥𝐬
+This Hadoop Command is used to displays the list of the contents of a particular directory given by the user. It also contents name, permission, size and owner and last edit date.
+Command:- 𝐡𝐝𝐟𝐬 𝐝𝐟𝐬 -𝐥𝐬 /𝐮𝐬𝐫/𝐥𝐨𝐜𝐚𝐥/𝐟𝐢𝐫𝐬𝐭𝐝𝐢𝐫
+
+4. 𝐩𝐮𝐭
+This Hadoop Command is used to copies the content from the local file system to the other location within DFS.
+Command: - 𝐡𝐝𝐟𝐬 𝐝𝐟𝐬 -𝐩𝐮𝐭 𝐬𝐨𝐮𝐫𝐜𝐞_𝐝𝐢𝐫 𝐝𝐞𝐬𝐭𝐢𝐧𝐚𝐭𝐢𝐨𝐧_𝐝𝐢𝐫
+
+5. 𝐜𝐨𝐩𝐲𝐅𝐫𝐨𝐦𝐋𝐨𝐜𝐚𝐥
+This Hadoop command is the same as put command but here one difference is here like in case this command source directory is restricted to local file reference.
+Command: - 𝐡𝐝𝐟𝐬 𝐝𝐟𝐬 -𝐜𝐨𝐩𝐲𝐅𝐫𝐨𝐦𝐋𝐨𝐜𝐚𝐥 𝐥𝐨𝐜𝐚𝐥_𝐬𝐫𝐜 𝐝𝐞𝐬𝐭𝐢𝐧𝐚𝐭𝐢𝐨𝐧_𝐝𝐢𝐫
+
+6. 𝐠𝐞𝐭
+This Hadoop Command fetches all files that match the src dir which is entered by the user in HDFS and generates a copy of them in the local file system.
+Command: - 𝐡𝐝𝐟𝐬 𝐝𝐟𝐬 -𝐠𝐞𝐭 𝐬𝐨𝐮𝐫𝐜𝐞_𝐝𝐢𝐫 𝐥𝐨𝐜𝐚𝐥_𝐝𝐢𝐫
+
+7. 𝐜𝐨𝐩𝐲𝐓𝐎𝐋𝐨𝐜𝐚𝐥
+This Hadoop Command is using the same as getting command but one difference is that in this the destination is limited to a local file path.
+Command:- 𝐡𝐝𝐟𝐬 -𝐝𝐟𝐬 -𝐜𝐨𝐩𝐲𝐓𝐨𝐋𝐨𝐜𝐚𝐥 𝐬𝐫𝐜_𝐝𝐢𝐫 𝐥𝐨𝐜𝐚𝐥_𝐝𝐢𝐫
+
+8. 𝐜𝐚𝐭
+This Hadoop Command displays the content of the file name on the console.
+Command:- 𝐡𝐝𝐟𝐬 𝐝𝐟𝐬 -𝐜𝐚𝐭 𝐝𝐢𝐫_𝐩𝐚𝐭𝐡
+
+9. 𝐦𝐯
+This Hadoop Command moves the file and directory one location to another location within hdfs.
+Command:- 𝐡𝐝𝐟𝐬 𝐟𝐬 -𝐦𝐯 𝐬𝐨𝐮𝐫𝐜𝐞_𝐝𝐢𝐫_𝐟𝐢𝐥𝐞𝐧𝐚𝐦𝐞 𝐝𝐞𝐬𝐭𝐢𝐧𝐚𝐭𝐢𝐨𝐧_𝐝𝐢𝐫
+
+10. 𝐜𝐩
+This Hadoop command copies the file and directory one location to other locations within hdfs.
+Command:- 𝐡𝐝𝐟𝐬 𝐟𝐬 -𝐜𝐩 𝐬𝐨𝐮𝐫𝐜𝐞_𝐝𝐢𝐫_𝐟𝐢𝐥𝐞𝐧𝐚𝐦𝐞 𝐝𝐞𝐬𝐭𝐢𝐧𝐚𝐭𝐢𝐨𝐧_𝐝𝐢𝐫
+
+11. 𝐦𝐨𝐯𝐞𝐅𝐫𝐨𝐦𝐋𝐨𝐜𝐚𝐥
+It copies content from the local file system to a destination within HDFS but the copy is a success then deletes content from the local file system.
+Command:- 𝐡𝐝𝐟𝐬 𝐝𝐟𝐬 -𝐦𝐨𝐯𝐞 𝐟𝐫𝐨𝐦 𝐥𝐨𝐜𝐚𝐥 𝐥𝐨𝐜𝐚𝐥_𝐬𝐫𝐜 𝐝𝐞𝐬𝐭𝐢𝐧𝐚𝐭𝐢𝐨𝐧_𝐝𝐢𝐫
+
+12. 𝐦𝐨𝐯𝐞 𝐭𝐨 𝐥𝐨𝐜𝐚𝐥
+This Hadoop command runs as -get commands but one difference is that when the copy operation is a success then delete the file from HDFS location.
+Commands- 𝐦𝐨𝐯𝐞 𝐭𝐨 𝐥𝐨𝐜𝐚𝐥 𝐬𝐨𝐮𝐫𝐜𝐞_𝐝𝐢𝐫 𝐥𝐨𝐜𝐚𝐥_𝐝𝐢𝐫
+
+13. 𝐭𝐚𝐢𝐥
+It displays 1 KB content on the console of the file.
+Command:- 𝐡𝐝𝐟𝐬 𝐝𝐟𝐬 -𝐭𝐚𝐢𝐥 𝐟𝐢𝐥𝐞_𝐩𝐚𝐭𝐡
+
+14. 𝐫𝐦
+It removes files and directory from the specified path.
+Command:- 𝐡𝐝𝐟𝐬 𝐝𝐟𝐬 -𝐫𝐦 𝐝𝐢𝐫_𝐧𝐚𝐦𝐞
+
+15. 𝐞𝐱𝐩𝐮𝐧𝐠𝐞
+This is used to empty the trash.
+Command:- 𝐡𝐝𝐟𝐬 𝐝𝐟𝐬 -𝐞𝐱𝐩𝐮𝐧𝐠𝐞
+
+16. 𝐜𝐡𝐨𝐰𝐧
+It used to change the owner of files. We can also use it by -R for recursively.
+Command:- 𝐡𝐝𝐟𝐬 𝐝𝐟𝐬 -𝐜𝐡𝐨𝐰𝐧 𝐨𝐰𝐧𝐞𝐫_𝐧𝐚𝐦𝐞 𝐝𝐢𝐫_𝐧𝐚𝐦𝐞
+
+17. 𝐜𝐡𝐠𝐫𝐩
+This is used to change the group of files. We can also use it by -R for recursively.
+Command:- 𝐡𝐝𝐟𝐬 𝐝𝐟𝐬 -𝐜𝐡𝐠𝐫𝐩 𝐠𝐫𝐨𝐮𝐩_𝐧𝐚𝐦𝐞 𝐝𝐢𝐫_𝐧𝐚𝐦𝐞
+
+18. 𝐝𝐮
+This displays disk usage for all files available in the present directory with the path given by the user and prints information in bytes format.
+Command:- 𝐡𝐝𝐟𝐬 𝐝𝐟𝐬 -𝐝𝐮 𝐝𝐢𝐫_𝐧𝐚𝐦𝐞
+
+19. 𝐝𝐟
+This Hadoop Command displays free space.
+Command:- 𝐡𝐝𝐟𝐬 𝐝𝐟𝐬 -𝐝𝐟 -𝐡
+
+20. 𝐭𝐨𝐮𝐜𝐡𝐳
+This is used to create a file with a path and includes current time as timestamp and is also the path is exiting if exits then fail to create process.
+Command:- 𝐡𝐝𝐟𝐬 𝐝𝐟𝐬 -𝐭𝐨𝐮𝐜𝐡𝐳 𝐝𝐢𝐫_𝐧𝐚𝐦𝐞
+
+21. 𝐚𝐩𝐩𝐞𝐧𝐝𝐓𝐨𝐅𝐢𝐥𝐞
+It appends one and multiple sources from the local file system to the destination.
+Command:- 𝐡𝐝𝐟𝐬 𝐝𝐟𝐬 -𝐚𝐩𝐩𝐞𝐧𝐝 𝐭𝐨 𝐟𝐢𝐥𝐞 𝐥𝐨𝐜𝐚𝐥_𝐬𝐫𝐜…. 𝐃𝐞𝐬𝐭𝐢𝐧𝐚𝐭𝐢𝐨𝐧_𝐝𝐢𝐫_𝐧𝐚𝐦𝐞
+
+22. 𝐜𝐨𝐮𝐧𝐭
+This is used to counts the number of directories and files.
+Command:- 𝐡𝐝𝐟𝐬 𝐝𝐟𝐬 -𝐜𝐨𝐮𝐧𝐭 𝐝𝐢𝐫_𝐧𝐚𝐦𝐞
+
+23. 𝐜𝐡𝐞𝐜𝐤𝐬𝐮𝐦
+It returns checksum information of a particular file.
+Command:- 𝐡𝐝𝐟𝐬 𝐝𝐟𝐬 -𝐜𝐡𝐞𝐜𝐤𝐬𝐮𝐦 𝐟𝐢𝐥𝐞_𝐧𝐚𝐦𝐞
+
+24.𝐟𝐨𝐫𝐦𝐚𝐭
+Hadoop format a namenode 
+Commands :- $𝐡𝐚𝐝𝐨𝐨𝐩 𝐧𝐚𝐦𝐞𝐧𝐨𝐝𝐞 -𝐟𝐨𝐫𝐦𝐚𝐭
+
+25. Make namenode exit safe mode 
+command :- $ 𝐬𝐮𝐝𝐨 -𝐮 𝐡𝐝𝐟𝐬 𝐡𝐝𝐟𝐬 𝐝𝐟𝐬𝐚𝐝𝐦𝐢𝐧 -𝐬𝐚𝐟𝐞𝐦𝐨𝐝𝐞 𝐥𝐞𝐚𝐯𝐞
