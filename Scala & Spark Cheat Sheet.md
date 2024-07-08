@@ -172,7 +172,7 @@ people.select(when(people("gender") === "male", 0)
   .otherwise(2))
 ```
 
-## Dealing with DateTime :cry:
+## Dealing with DateTime :
 
 ### Example: Find the minutes difference between two dates
 
