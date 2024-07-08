@@ -111,10 +111,6 @@ import org.apache.spark.sql.functions._
 df.orderBy(asc("col1"))
 ```
 
-### Dollar Notation
-
-See [link](https://bzhangusc.wordpress.com/2015/03/29/the-column-class/) going in depth
-
 ### Joining
 
 ```scala
