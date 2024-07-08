@@ -8,8 +8,6 @@ Syntax key:
 
  
 
-[TOC]
-
 ## Spark Core
 
 ### Creating a function that deals with flatmap
