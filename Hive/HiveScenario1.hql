@@ -5,20 +5,22 @@ The data includes sensor readings (timestamp, sensor_id, value) from various IoT
 for the last month.
   */
 
-CREATE EXTERNAL TABLE sensor_data(
- timestamp STRING,
- sensor_id STRING,
- value DOUBLE)
+CREATE EXTERNAL TABLE sensor_data (
+    timestamp STRING,
+    sensor_id STRING,
+    value DOUBLE,
+    date STRING
+)
 ROW FORMAT DELIMITED
-FIELD TERMINATED BY ','
+FIELDS TERMINATED BY ','
 LOCATION '/user/hdfs/sensor_data';
 
 INSERT OVERWRITE TABLE sensor_data PARTITION (date)
-     SELECT timestamp, sensor_id, value, FROM_UNIXTIME(UNIX_TIMESTAMP(timestamp), 'yyyy-MM-dd') AS date
-     FROM sensor_raw_data;
+SELECT timestamp, sensor_id, value, FROM_UNIXTIME(UNIX_TIMESTAMP(timestamp, 'yyyy-MM-dd HH:mm:ss'), 'yyyy-MM-dd') AS date
+FROM sensor_raw_data;
 
 SELECT date, sensor_id, AVG(value) AS avg_value
-     FROM sensor_data
-     WHERE date >= date_sub(current_date, 30)
-     GROUP BY date, sensor_id
-     ORDER BY date, sensor_id;
+FROM sensor_data
+WHERE date >= FROM_UNIXTIME(UNIX_TIMESTAMP(DATE_SUB(CURRENT_DATE, 30)), 'yyyy-MM-dd')
+GROUP BY date, sensor_id
+ORDER BY date, sensor_id;
