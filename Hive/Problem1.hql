@@ -1,5 +1,5 @@
 /*
-Problem: Find stores that were opened in the second half of 2021 with more than 20% of their reviews being negative. 
+Problem: Find stores that were opened in the second half of 2021 with more than 20% of their reviews being negative.
 A review is considered negative when the score given by a customer is below 5. Output the names of the stores together
 with the ratio of negative reviews to positive ones.
 
