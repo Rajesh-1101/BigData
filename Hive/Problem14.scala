@@ -23,10 +23,10 @@ EmpId Name Location
 import org.apache.spark.sql.{DataFrame, SparkSession}
 import org.apache.spark.sql.functions._
 
-object multiDelimiters {
+object locationExplode {
   def main(args: Array[String]): Unit = {
     val spark = SparkSession.builder()
-      .appName("multiDelimiters")
+      .appName("locationExplode")
       .master("local[*]")
       .getOrCreate()
 
