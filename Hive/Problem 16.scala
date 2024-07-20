@@ -22,6 +22,7 @@ Here's the cleaned and transformed data frame:
 | 3 | Alice Lee | alice.lee@yahoo.com | 5555555 | 2023-03-10 | 0 |
 | 4 | Bob Brown | bob.brown@gmail.com | N/A | 2022-05-20 | 1 |
 */
+
 import org.apache.spark.sql.{SparkSession, Row}
 import org.apache.spark.sql.types._
 import org.apache.spark.sql.functions._
